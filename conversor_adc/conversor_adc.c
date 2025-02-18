@@ -165,9 +165,9 @@ static void gpio_irq_handler(uint gpio, uint32_t events) {
     if (current_time - last_time >= 200000) {
         if (gpio == 5) {
             pwm_ativo = !pwm_ativo;
-            printf("Btn pressionado A");
+            printf("Btn pressionado A\n");
         } else {
-            printf("Btn pressionado SW");
+            printf("Btn pressionado SW\n");
             
             if (pwm_ativo) {
                 if (led_green_estado) {
